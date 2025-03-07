@@ -1,81 +1,63 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
+title: M2 internship
+description: Machine learning for a chemical product 
+img: assets/img/stack.png
+importance: 1
 category: work
-giscus_comments: true
+related_publications: False
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<div id="sidebar" style="position: fixed; top: 10%; left: 5%; padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9; border-radius: 5px; width: 220px;">
+    <h3>Sections</h3>
+    <ul>
+        <li><a href="#context">Context</a></li>
+        <li><a href="#methods">Methods</a>
+        </li>
+        <li><a href="#results">Results</a></li>
+       
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+    </ul>
 
+
+</div>
+
+<div style="margin-left: 250px; padding: 20px;">
+    <h1 id="context">Context</h1>
+    <p>This M2 internship at Solvay, located in Lyon, France, focused on predicting chemical product properties using machine learning techniques. The project involved a multi-output regression problem with four output dimensions. Due to confidentiality agreements, the names of the products, features, associated code, and data cannot be disclosed.</p>
+
+    <h1 id="methods">Methods</h1>
+    
+        
+    <p> The process started with data cleaning and exploratory visualization, including principal component analysis (PCA). Given the small dataset (~1000 samples), various traditional machine learning algorithms were explored: Elastic Net, Partial Least Squares Regression (PLSR), KNN, Support Vector Machines (SVM), Decision Trees, Random Forest, Gradient Boosting, and Artificial Neural Networks (ANN).
+
+</p>
+
+<p> Two specific methods for multi-output regression were implemented in Python: multi-target regressor stacking and  Regressor chains. A nested cross-validation approach was employed to ensure robust evaluation, accompanied by hyperparameter tuning for all models. </p>
+    
+ <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/chain.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Regressor chains.
+</div>     
+    
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/stack.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+    Regressor stacking.
+</div>    
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+    <h1 id="results">Results</h1>
+    <p>SVM, combined with stacking and regressor chains, yielded predictions closely matching the expected outputs. These results met the company’s expectations, leading to the proposal of a follow-up thesis to further investigate and expand on the project outcomes.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+
+
+</p>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
