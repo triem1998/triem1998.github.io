@@ -101,7 +101,7 @@ The LA method approximates the posterior distribution as a Gaussian, with the me
 
 
 <a href="https://github.com/triem1998/BenchmarkGamma">Code</a>
-<a href="https://www.sciencedirect.com/science/article/pii/S0168900225008903">Journal article</a> 
+<a href="https://arxiv.org/abs/2508.08306">Journal article</a> 
 
 
 
