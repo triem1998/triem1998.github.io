@@ -100,7 +100,8 @@ The LA method approximates the posterior distribution as a Gaussian, with the me
  <p> The hybrid approach is evaluated against the state-of-the-art end-to-end CNN for identification and quantification tasks across various scenarios. <b>  This method outperforms the CNN in all scenarios for both tasks.</b> <br>
 
 
-<a href="https://github.com/triem1998/BenchmarkGamma">Code</a> Article in progress
+<a href="https://github.com/triem1998/BenchmarkGamma">Code</a>
+<a href="https://www.sciencedirect.com/science/article/pii/S0168900225008903">Journal article</a> 
 
 
 
